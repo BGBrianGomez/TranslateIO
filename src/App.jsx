@@ -146,16 +146,16 @@ function App() {
 
   return (
     <div
-      className="bg-cover bg-center h-screen"
+      className="bg-cover bg-center h-full sm:h-screen"
       style={{ backgroundImage: `url(${Fondo})` }}
     >
       <div className="flex flex-col justify-center items-center">
         <div className="h-40 flex items-end">
           <img src={Logo} alt="" />
         </div>
-        <div className=" w-full h-full justify-center items-center flex gap-5 mt-10">
-          <div className="h-96 w-2/5 bg-gray-800 opacity-90 rounded-3xl flex flex-col border border-gray-500">
-            <div className="h-16 flex items-center justify-start gap-6 px-10 text-gray-300">
+        <div className=" w-full h-full justify-center items-center flex flex-col sm:flex-row gap-5 mt-10">
+          <div className="h-96 w-6/7 sm:w-2/5 bg-gray-800 opacity-90 rounded-3xl flex flex-col border border-gray-500">
+            <div className="h-16 flex items-center justify-start gap-2 px-1 text-sm text-gray-300">
               <button className=" transition duration-300 hover:text-white hover:bg-slate-500 opacity-20 hover:opacity-100 rounded-xl p-2" onClick={detectarIdioma}>
                 Detect Lenguage
               </button>
@@ -237,8 +237,8 @@ function App() {
             </div>
           </div>
 
-          <div className="h-96 w-2/5 bg-gray-900 opacity-90 rounded-3xl flex flex-col border border-gray-500">
-            <div className="h-16 3/3 flex items-center justify-between gap-6 px-10 text-gray-300">
+          <div className="h-96 w-6/7 sm:w-2/5 bg-gray-900 opacity-90 rounded-3xl flex flex-col border border-gray-500">
+            <div className="h-16 flex items-center justify-between gap-2 sm:gap-6 px-10 text-sm text-gray-300">
               <div className="flex gap-6">
                 <button
                   className={`transition duration-300 ${
